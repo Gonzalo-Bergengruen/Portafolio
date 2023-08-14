@@ -1,7 +1,60 @@
-h1, h2{
+h1{
     color: rgb(0, 54, 124);
     text-align: center;
 }
-a{
+
+h2{
+    text-align: center;
+}
+
+.textoImagen{
+    display: grid;
+    align-items: center; 
+    grid-template-columns: 1fr 0.125fr 1fr;
+    column-gap: 5px;
+}
+
+img{
+    max-width: 110%;
+    max-height: 100%;
+}
+
+b{
     float: right;
+}
+
+#titulo{
+    font-size: 70px;
+}
+
+.subtitulo{
+    color: black;
+}
+
+div > c{
+    color: black;
+    font-size: 20px;
+}
+
+@media (width < 426px){
+    img{
+        max-width: none;
+        width: 300px;
+    }
+    .imagen, h3, .boton{
+        text-align: center;
+    }
+    h3{
+        margin: 0;
+    }
+    .textoImagen{
+        display: contents;
+        align-items: normal;
+    }
+    #flecha{
+        visibility: hidden;
+    }
+    .boton{
+        padding: 20%;
+    }
 }
