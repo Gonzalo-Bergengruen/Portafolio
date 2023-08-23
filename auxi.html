@@ -1,24 +1,42 @@
 <html>
-    <head>
-        <link rel="stylesheet" href="./Primer Intento.css">
-    </head>
-    <body>
-        <div>
-            <c>
-                <div class="subtitulo">
-                    Peces gratis
-                    <b>
-                        <input type="text">
-                        <button> Botón</button>
-                    </b>
-                </div>
-            <div class="textoImagen">
-                <a href="https://www.youtube.com/watch?v=cC9r0jHF-Fw">
-                    <img src = "C:\Users\gonza\Downloads\cute-fish-cartoon-illustration.png"; />
-                </a>
-                <h3> «--- Vea peces aca </h3>
-            </div>
-            </c>
-        </div>
-    </body>
+
+<head>
+  <link rel="stylesheet" href="./EstiloAux.css">
+</head>
+
+<body>
+  <h1>My First JavaScript</h1>
+
+  <p id="demo">JavaScript can change the style of an HTML element.</p>
+  <div class="dropdown">
+    <button class="dropbtn"> Opciones </button>
+    <div class="dropdown-content">
+      <a href="#" onclick="crear()"> Nueva Tarjeta </a>
+      <a href="#"> Eliminar Columna </a>
+      <a href="#"> Modificar Columna </a>
+    </div>
+  </div>
+
+  <script>
+    function myFunction() {
+      const element = document.getElementById("demo");
+      if (element.style.display == "none") {
+        element.style.display = "block";
+      } else {
+        element.style.display = "none";
+      }
+    }
+
+    function crear() {
+        const div = document.createElement("div");
+        div.textContent = "Hola Mundo.";
+        div.style.color = "black";
+        document.body.appendChild(div);
+    }
+  </script>
+
+  <button type="button" onclick="crear()">Click Me!</button>
+
+</body>
+
 </html>
