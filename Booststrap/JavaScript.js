@@ -45,6 +45,7 @@ function CrearColumna() {
     numColumnas++;
     if (numColumnas >= 13) {
         document.getElementById("Aviso").textContent = "No puede tener más columnas.";
+        numColumnas--;
     } else {
         let divNombre = document.createElement("div");
         divNombre.textContent = "Hola Mundo";
@@ -114,19 +115,19 @@ function CrearTarjeta1() {
 
     let divRowT = document.createElement("div");
     divRowT.className = "row";
-    divRowT.id = "1-" + numTarjetas1.toString() + "rowT";
+    divRowT.id = "1_" + numTarjetas1.toString() + "rowT";
     document.getElementById("1_" + numTarjetas1.toString()).appendChild(divRowT);
     let divTitulo = document.createElement("div");
     divTitulo.className = "titulo";
     divTitulo.textContent = "Ejemplo";
-    document.getElementById("1-" + numTarjetas1.toString() + "rowT").appendChild(divTitulo);
+    document.getElementById("1_" + numTarjetas1.toString() + "rowT").appendChild(divTitulo);
     let divRowC = document.createElement("div");
     divRowC.className = "row";
-    divRowC.id = "1-" + numTarjetas1.toString() + "rowC";
+    divRowC.id = "1_" + numTarjetas1.toString() + "rowC";
     document.getElementById("1_" + numTarjetas1.toString()).appendChild(divRowC);
     let divContenido = document.createElement("div");
     divContenido.className = "texto";
     divContenido.textContent = "Contenido";
-    document.getElementById("1-" + numTarjetas1.toString() + "rowC").appendChild(divContenido);
+    document.getElementById("1_" + numTarjetas1.toString() + "rowC").appendChild(divContenido);
 
 }
