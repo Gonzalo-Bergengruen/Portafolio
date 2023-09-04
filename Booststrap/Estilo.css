@@ -22,45 +22,57 @@ h1{
     text-align: center;
 }
 
-#--1{
+#--1, #--7{
     background-color: blueviolet;
 }
 
-#uno .tarjeta{
+#_1 .tarjeta{
     margin: 5px;
     border-radius: 10px;
     background-color: violet;
 }
 
-#--2{
+#--2, #--8{
     background-color: red;
 }
 
-.dos .tarjeta{
+#_2 .tarjeta{
     margin: 5px;
     border-radius: 10px;
     background-color: coral;
 }
 
-#--3{
+#--3, #--9{
     background-color: blue;
 }
 
-.tres .tarjeta{
+#_3 .tarjeta{
     margin-right: 5px;
     border-radius: 10px;
     background-color: cyan;
 }
 
-#--4{
+#--4, #--10{
     background-color: seagreen;
 }
 
-#--5{
+#_4 .tarjeta{
+    margin-right: 5px;
+    border-radius: 10px;
+    background-color: chartreuse;
+}
+
+#--5, #--11{
     background-color: gold;
 }
 
-#--6{
+#_5 .tarjeta{
+    margin-right: 5px;
+    border-radius: 10px;
+    background-color: darkgoldenrod;
+}
+
+#--6, #--12{
     background-color: burlywood;
 }
 
@@ -69,42 +81,46 @@ h1{
     text-align: left;
 }
 
-@media (width >0px)
+@media (width > 0px)
 {
-    #primero{
+    #--1{
         margin-bottom: 5px;
     }
-    .segundo{
+    #--2{
         margin-bottom: 5px;
     }
-    .tercero{
+    #--3{
         margin-bottom: 5px;
     }
-    .cuarto{
+    #--4{
         margin-bottom: 5px;
     }
-    .quinto{
+    #--5{
+        margin-bottom: 5px;
+    }
+    #--6{
+        margin-bottom: 5px;
+    }
+    #--7{
+        margin-bottom: 5px;
+    }
+    #--8{
+        margin-bottom: 5px;
+    }
+    #--9{
+        margin-bottom: 5px;
+    }
+    #--10{
+        margin-bottom: 5px;
+    }
+    #--11{
+        margin-bottom: 5px;
+    }
+    #--12{
         margin-bottom: 5px;
     }
 }
 
-@media (width > 1023px){
-    #primero{
-        margin-right: 5px;
-    }
-    .segundo{
-        margin-right: 5px;
-    }
-    .tercero{
-        margin-right: 5px;
-    }
-    .cuarto{
-        margin-right: 5px;
-    }
-    .quinto{
-        margin-right: 5px;
-    }
-}
 
 
 

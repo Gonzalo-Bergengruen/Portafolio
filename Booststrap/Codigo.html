@@ -9,9 +9,10 @@
     <script src="./JavaScript.js"></script>
 </head>
 
-<body>
+<body id="cuerpo">
     <h1> Anotaciones </h1>
     <h2>
+        <!-- <div> <button onclick="getInfo()"> aux </button></div> -->
         <div class="text-center"> <button onclick="CrearColumna()"> New List </button> </div>
         <div class="container text-center">
             <div class="row gx-5" id="columnas">
@@ -20,20 +21,20 @@
                     <div class="dropdown">
                         <button class="dropbtn"> Opciones </button>
                         <div class="dropdown-content">
-                            <a href="#" onclick="CrearTarjeta1()"> Nueva Tarjeta </a>
-                            <a href="#" onclick="EliminarColumna1()"> Eliminar Columna </a>
-                            <a href="#" onclick="AvisoFunción()"> Modificar Columna </a>
+                            <a href="#" id="a1--1" onclick="CrearTarjeta1()"> Nueva Tarjeta </a>
+                            <a href="#" id="a2--1" onclick="EliminarColumna1()"> Eliminar Columna </a>
+                            <a href="#" id="a3--1" onclick="AvisoFunción()"> Modificar Columna </a>
                         </div>
                     </div>
-                    <div class="col" id="uno">
+                    <div class="col" id="_1">
 
                         <div class="tarjeta" id="1_1">
                             <div class="dropdown">
                                 <button class="dropbtn"> Opciones </button>
                                 <div class="dropdown-content">
-                                    <a href="#"> Mover </a>
-                                    <a href="#" onclick="EliminarTarjeta1_1()"> Eliminar </a>
-                                    <a href="#"> Modificar </a>
+                                    <a href="#" id="a11_1"> Mover </a>
+                                    <a href="#" id="a21_1" onclick="EliminarTarjeta1_1()"> Eliminar </a>
+                                    <a href="#" id="a31_1"> Modificar </a>
                                 </div>
                             </div>
                             <div class="row">
@@ -43,9 +44,6 @@
                                 <div class="texto"> Ejercicios 1-8 </div>
                             </div>
                         </div>
-
-                        <div id="NuevaTarjeta"></div>
-
                     </div>
                 </div>
 
@@ -53,12 +51,12 @@
                     <div class="dropdown">
                         <button class="dropbtn"> Opciones </button>
                         <div class="dropdown-content">
-                            <a href="#"> Nueva Tarjeta </a>
-                            <a href="#"> Eliminar Columna </a>
-                            <a href="#"> Modificar Columna </a>
+                            <a href="#" id="a1--2" onclick="CrearTarjeta2()"> Nueva Tarjeta </a>
+                            <a href="#" id="a2--2" onclick="EliminarColumna2()"> Eliminar Columna </a>
+                            <a href="#" id="a3--2"> Modificar Columna </a>
                         </div>
                     </div>
-                    <div class="col dos">
+                    <div class="col" id="_2">
 
                         <div class="tarjeta" id="2_1">
                             <div class="dropdown">
@@ -101,12 +99,12 @@
                     <div class="dropdown">
                         <button class="dropbtn"> Opciones </button>
                         <div class="dropdown-content">
-                            <a href="#"> Nueva Tarjeta </a>
-                            <a href="#"> Eliminar Columna </a>
-                            <a href="#"> Modificar Columna </a>
+                            <a href="#" id="a1--3" onclick="CrearTarjeta3()"> Nueva Tarjeta </a>
+                            <a href="#" id="a2--3" onclick="EliminarColumna3()"> Eliminar Columna </a>
+                            <a href="#" id="a3--3"> Modificar Columna </a>
                         </div>
                     </div>
-                    <div class="col tres">
+                    <div class="col" id="_3">
 
                         <div class="tarjeta" id="3_1">
                             <div class="dropdown">
@@ -118,7 +116,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="titulo"> Página
+                                <div class="titulo"> Pagina
                                 </div>
                             </div>
                             <div class="row">
@@ -133,12 +131,13 @@
                     <div class="dropdown">
                         <button class="dropbtn"> Opciones </button>
                         <div class="dropdown-content">
-                            <a href="#"> Nueva Tarjeta </a>
-                            <a href="#"> Eliminar Columna </a>
-                            <a href="#"> Modificar Columna </a>
+                            <a href="#" id="a1--4" onclick="CrearTarjeta4()"> Nueva Tarjeta </a>
+                            <a href="#" id="a2--4" onclick="EliminarColumna4()"> Eliminar Columna </a>
+                            <a href="#" id="a3--4"> Modificar Columna </a>
                         </div>
                     </div>
-                    <div class="col cuatro">
+                    <div class="col" id="_4">
+                        
 
                     </div>
                 </div>
@@ -147,12 +146,12 @@
                     <div class="dropdown">
                         <button class="dropbtn"> Opciones </button>
                         <div class="dropdown-content">
-                            <a href="#"> Nueva Tarjeta </a>
-                            <a href="#"> Eliminar Columna </a>
-                            <a href="#"> Modificar Columna </a>
+                            <a href="#" id="a1--5" onclick="CrearTarjeta5()"> Nueva Tarjeta </a>
+                            <a href="#" id="a2--5" onclick="EliminarColumna5()"> Eliminar Columna </a>
+                            <a href="#" id="a3--5"> Modificar Columna </a>
                         </div>
                     </div>
-                    <div class="col cinco">
+                    <div class="col" id="_5">
 
                     </div>
                 </div>
