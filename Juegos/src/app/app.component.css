@@ -1,0 +1,9 @@
+body, header, footer{
+    background-color: black!important;
+    color: white;
+}
+
+body{
+    padding-bottom: 662px;
+    height: auto;
+}

@@ -1,0 +1,31 @@
+<header>
+    <a class="logo" routerLink="">
+        <img class="logo" src="assets/logo.png" />
+    </a>
+</header>
+
+<div class="detalles">
+    <div class="titulo">
+        <img src="{{game.background_image}}">
+        <h1> {{game.name}} </h1>
+    </div>
+    <h3>
+        <h2>
+            <div class="centrado"> Players Score: {{game.rating}} - Metacritic: {{game.metacritic}} </div>
+        </h2>
+        <h3>
+            <div class="description"> {{game.description}} </div>
+        </h3>
+        <div class="generos">
+            <div> Generos: </div>
+            <span *ngFor="let genero of game.genres">
+                - {{genero.name}}
+            </span>
+            <span> - </span>
+        </div>
+    </h3>
+</div>
+
+<footer>
+    <h4> Hecho por Gonzalo Bergengruen - 2023 </h4>
+</footer>

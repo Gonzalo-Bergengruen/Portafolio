@@ -1,0 +1,42 @@
+.titulo{
+    text-align: center;
+}
+
+img{
+    width: 75%;
+    height: 75%;
+}
+
+.logo{
+    width: 200px;
+    height: 125px;
+}
+
+.centrado{
+    text-align: center;
+}
+
+header{
+    border-bottom: 3px solid darkmagenta;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+.description{
+    border: 3px solid darkmagenta;
+    padding: 5px;
+    margin: 15px;
+}
+
+.generos{
+    text-align: center;
+}
+
+@media (width<426px){
+    .logo{
+        margin-left: auto;
+        margin-right: auto;
+        width: 65%;
+        display: block;
+    }
+}

@@ -1,0 +1,18 @@
+<span class="sidebar-opener" (click)="sidebarShow = !sidebarShow">
+    <button class="dots"> &#8230; </button>
+</span>
+
+<div class="sidebar-slider" [class.sidebar-slide-in]="sidebarShow">
+    <div class="sidebar-close" (click)="sidebarShow = !sidebarShow">
+        X
+    </div>
+    <div class="sidebar-content">
+        <div class="subtitulo">
+            Navegación 
+        </div>
+        <button class="opciones" (click)="Hogar()" (click)="sidebarShow = false"> Hogar </button>
+        <button class="opciones" (click)="Accion()" (click)="sidebarShow = false"> Acción </button>
+        <button class="opciones" (click)="Aventura()" (click)="sidebarShow = false"> Aventura </button>
+        <button class="opciones" (click)="Puzzles()" (click)="sidebarShow = false"> Puzzles </button>
+    </div>
+</div>

@@ -1,0 +1,17 @@
+#search-component {
+    text-align: center;
+}
+
+#search-box {
+    width: 400px;
+}
+
+@media (width<426px) {
+    #search-box {
+        width: 300px;
+    }
+
+    #search-component {
+        margin-top: 5px;
+    }
+}
