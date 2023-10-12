@@ -1,0 +1,57 @@
+.container{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-y: hidden;
+    overflow-x: auto;
+    text-align: center;
+    padding-left: 30px;
+}
+
+.foto{
+    width: 360px;
+    height: 400px;
+}
+
+.jugador{
+    text-align: center;
+    border: 3px solid purple;
+    margin: 3px;
+}
+
+.link{
+    display: inline;
+    text-decoration: none;
+    color: white;
+}
+
+@media (width<1200px){
+    .foto{
+        width: 300px;
+        height: 340px;
+    }
+}
+
+@media (width<995px){
+    .foto{
+        width: 340px;
+        height: 400px;
+    }
+}
+
+@media (width<768px){
+    .foto{
+        width: 250px;
+        height: 310px;
+    }
+}
+
+@media (width<537px){
+    .foto{
+        width: 100%;
+        height: 100%;
+    }
+    .container{
+        padding-left: 12%;
+        padding-right: 12%;
+    }
+}

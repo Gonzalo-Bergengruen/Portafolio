@@ -1,0 +1,33 @@
+<div>
+    <div>
+        <label> Nombre del jugador: </label>
+        <input #playerName />
+    </div>
+    <div>
+        <label> Apellido del jugador: </label>
+        <input #playerSecondName />
+    </div>
+    <div>
+        <label> Posicion del jugador: </label>
+        <input #playerPosition />
+    </div>
+    <div>
+        <label> Nombre de la imagen (debe ser .png): </label>
+        <input #playerImage />
+    </div>
+    <button (click)="agregarJugador(playerName.value, playerSecondName.value, playerPosition.value, playerImage.value)"> Agregar otro jugador </button>
+</div>
+<span> {{mensaje}} </span>
+<div class="container">
+    <div class="row cols-1 cols-sm-2 cols-md-3 cols-lg-3 g-2" id="columnas">
+        <div class="jugador" *ngFor="let player of players">
+            <a class="link" routerLink="/detail/{{player.nombreC}}">
+                <div class="item">
+                    <img class="foto" src='{{player.foto}}' />
+                </div>
+                <h2> {{player.apellido}} </h2>
+            </a>
+            <button (click)="eliminarJugador(player)"> Eliminar jugador </button>
+        </div>
+    </div>
+</div>
